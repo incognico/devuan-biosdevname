@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+%:
+	dh $@ --with autoreconf
+
+
+override_dh_auto_install:
+	dh_auto_install
+	install -D --mode=775 debian/initramfs.hook \
+		debian/biosdevname/usr/share/initramfs-tools/hooks/biosdevname
+

@@ -1,0 +1,5 @@
+biosdevname (0.7.2-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Nico R. Wohlgemuth <nico@lifiesabug.com>  Thu, 13 Sep 2018 13:43:00 +0200

@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Thu, 13 Sep 2018 13:43:00 +0200
+Source: biosdevname
+Binary: biosdevname biosdevname-udeb
+Architecture: amd64
+Version: 0.7.2-1
+Distribution: unstable
+Urgency: low
+Maintainer: Nico R. Wohlgemuth <nico@lifeisabug.com>
+Changed-By: Nico R. Wohlgemuth <nico@lifiesabug.com>
+Description:
+ biosdevname - biosdevname
+ biosdevname-udeb - biosdevname-udeb
+Changes:
+ biosdevname (0.7.2-1) unstable; urgency=low
+ .
+   * Initial release
+Checksums-Sha1:
+ b1be8fbb71a9c7108cbc0ab9f21993f92181058e 52736 biosdevname-dbgsym_0.7.2-1_amd64.deb
+ 4bb30f7e879c5dbe9b612f3d9b72b1d191d0ec4e 1160 biosdevname-udeb_0.7.2-1_amd64.deb
+ 3888b27e5193b9a31e8e9133bb4e033bbba8f192 5085 biosdevname_0.7.2-1_amd64.buildinfo
+ bf2bf1079f83afde02df7b53e6fb6ae904954183 19544 biosdevname_0.7.2-1_amd64.deb
+Checksums-Sha256:
+ 29826fa1d53b3d8558b1dcc18bca57a5fb61186a8baeb12add9bd5a1b9fdc936 52736 biosdevname-dbgsym_0.7.2-1_amd64.deb
+ 1fec0320e3a241dd3b9d57e75d017ee989d3dc7f9341b5223abf9ec57cb5864f 1160 biosdevname-udeb_0.7.2-1_amd64.deb
+ 42fd8595612e52beef23eeb942a7cfe08915667442bf2649c1de4c62c75d3dc4 5085 biosdevname_0.7.2-1_amd64.buildinfo
+ a88710b6d1f0a39264f371835bf6cc564a424ac668ddfd4491d33c730862f35f 19544 biosdevname_0.7.2-1_amd64.deb
+Files:
+ 411e58b403acfad10d16f1cc3edf187c 52736 debug extra biosdevname-dbgsym_0.7.2-1_amd64.deb
+ 1553982b1c45149c2d0f1f3e7932affd 1160 debian-installer optional biosdevname-udeb_0.7.2-1_amd64.deb
+ 21d70363d097c08a5c0d3ce9be3d0fca 5085 misc optional biosdevname_0.7.2-1_amd64.buildinfo
+ deb163fa11d409ee1bd7c3285c178255 19544 misc optional biosdevname_0.7.2-1_amd64.deb

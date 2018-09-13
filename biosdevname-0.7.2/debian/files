@@ -1,0 +1,4 @@
+biosdevname-dbgsym_0.7.2-1_amd64.deb debug extra
+biosdevname-udeb_0.7.2-1_amd64.deb debian-installer optional
+biosdevname_0.7.2-1_amd64.buildinfo misc optional
+biosdevname_0.7.2-1_amd64.deb misc optional

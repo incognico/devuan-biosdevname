@@ -1,0 +1,17 @@
+Source: biosdevname
+Section: misc
+Priority: optional
+Maintainer: Nico R. Wohlgemuth <nico@lifeisabug.com>
+Build-Depends: debhelper (>= 9), dh-autoreconf, libpci-dev
+Standards-Version: 3.9.8
+
+Package: biosdevname
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, eudev, libpci3
+Description: biosdevname
+
+Package: biosdevname-udeb
+Architecture: amd64
+Section: debian-installer
+Depends: ${shlibs:Depends}, ${misc:Depends}, eudev-udeb, libpci3
+Description: biosdevname-udeb

@@ -1,0 +1,18 @@
+Matt Domsch <Matt_Domsch@dell.com>
+ All files not otherwise noted
+
+list.h:
+ Cribbed from the Linux kernel 2.6.18.
+
+read_proc.c:
+ Cribbed from net-tools-1.60
+
+ethtool-copy.h:
+ Cribbed from ethtool
+
+dmidecode/*
+ Cribbed from dmidecode 2.9
+
+
+Michael Brown <Michael_E_Brown@dell.com>
+ autoconf/automake cleanups
