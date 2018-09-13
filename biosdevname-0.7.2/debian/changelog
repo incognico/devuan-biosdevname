@@ -1,3 +1,9 @@
+biosdevname (0.7.2-1.1) unstable; urgency=low
+
+  * Add postrm script to update initramfs after package removal
+
+ -- Nico R. Wohlgemuth <nico@lifiesabug.com>  Thu, 13 Sep 2018 16:46:48 +0200
+
 biosdevname (0.7.2-1) unstable; urgency=low
 
   * Initial release

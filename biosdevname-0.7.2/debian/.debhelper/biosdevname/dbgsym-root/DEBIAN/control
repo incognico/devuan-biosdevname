@@ -1,0 +1,12 @@
+Package: biosdevname-dbgsym
+Source: biosdevname
+Version: 0.7.2-1.1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Nico R. Wohlgemuth <nico@lifeisabug.com>
+Installed-Size: 70
+Depends: biosdevname (= 0.7.2-1.1)
+Section: debug
+Priority: extra
+Description: Debug symbols for biosdevname
+Build-Ids: b4c952c924b4b93466b65173d20a4ed02f4669da

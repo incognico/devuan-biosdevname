@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Thu, 13 Sep 2018 16:46:48 +0200
+Source: biosdevname
+Binary: biosdevname biosdevname-udeb
+Architecture: amd64
+Version: 0.7.2-1.1
+Distribution: unstable
+Urgency: low
+Maintainer: Nico R. Wohlgemuth <nico@lifeisabug.com>
+Changed-By: Nico R. Wohlgemuth <nico@lifiesabug.com>
+Description:
+ biosdevname - biosdevname
+ biosdevname-udeb - biosdevname-udeb
+Changes:
+ biosdevname (0.7.2-1.1) unstable; urgency=low
+ .
+   * Add postrm script to update initramfs after package removal
+Checksums-Sha1:
+ e4408c3780443fe91d2030e21c90a07bdd414635 52794 biosdevname-dbgsym_0.7.2-1.1_amd64.deb
+ c09522373942382fc2bc427f2c0a8bc1b9d24aa4 1232 biosdevname-udeb_0.7.2-1.1_amd64.deb
+ b2a908e67a22a964035927a54d30b533c1d23d72 5105 biosdevname_0.7.2-1.1_amd64.buildinfo
+ 159a5d62a7873e9eb5b58b92d56fe8dc0fb9877a 19658 biosdevname_0.7.2-1.1_amd64.deb
+Checksums-Sha256:
+ fcbdce1edd17d0f21b72d5f4dcb57eae4fa743428487a47e9273382f14c15e74 52794 biosdevname-dbgsym_0.7.2-1.1_amd64.deb
+ 759db065332d5db20d3a5d7ff5a0565b0f8aed1bc08003aeea586a6b88615844 1232 biosdevname-udeb_0.7.2-1.1_amd64.deb
+ ac44d1a3bb9b8cc492e03189c7da5a0c06a230073ea33b6f037d8adf74fa907e 5105 biosdevname_0.7.2-1.1_amd64.buildinfo
+ d44f511601de74426f29b577fe9ca6037817158952814b463e8632bbb0f6bdd8 19658 biosdevname_0.7.2-1.1_amd64.deb
+Files:
+ 50f988a2328ee0df76fd88f2bbef032e 52794 debug extra biosdevname-dbgsym_0.7.2-1.1_amd64.deb
+ 0c1690a677877cfdc90ab2d8707e725a 1232 debian-installer optional biosdevname-udeb_0.7.2-1.1_amd64.deb
+ 6db784874486c3e9f4a609b551297695 5105 misc optional biosdevname_0.7.2-1.1_amd64.buildinfo
+ 0f4b36af7fa7ca010166b52237ead2c6 19658 misc optional biosdevname_0.7.2-1.1_amd64.deb

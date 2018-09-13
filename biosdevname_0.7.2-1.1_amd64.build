@@ -1,0 +1,259 @@
+ dpkg-buildpackage -rfakeroot -us -uc -i -b
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: info: source package biosdevname
+dpkg-buildpackage: info: source version 0.7.2-1.1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Nico R. Wohlgemuth <nico@lifiesabug.com>
+ dpkg-source -i --before-build biosdevname-0.7.2
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --with autoreconf
+   dh_testdir
+   dh_auto_clean
+   dh_autoreconf_clean
+   dh_clean
+ debian/rules build
+dh build --with autoreconf
+   dh_testdir
+   dh_update_autotools_config
+   dh_autoreconf
+src/Makefile.am:1: warning: 'INCLUDES' is the old name for 'AM_CPPFLAGS' (or '*_CPPFLAGS')
+Makefile.am:17:   'src/Makefile.am' included from here
+   dh_auto_configure
+	./configure --build=x86_64-linux-gnu --prefix=/usr --includedir=\${prefix}/include --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var --disable-silent-rules --libdir=\${prefix}/lib/x86_64-linux-gnu --libexecdir=\${prefix}/lib/x86_64-linux-gnu --disable-maintainer-mode --disable-dependency-tracking
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking whether make supports nested variables... yes
+checking dependency style of gcc... none
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gawk... (cached) mawk
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking whether ln -s works... yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking for ranlib... ranlib
+checking for readelf... readelf
+checking for realpath... yes
+checking for snprintf in -lc... yes
+checking for gzopen in -lz... yes
+checking for pci_alloc in -lpci... yes
+checking for ANSI C header files... (cached) yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking for unistd.h... (cached) yes
+checking pci/pci.h usability... yes
+checking pci/pci.h presence... yes
+checking for pci/pci.h... yes
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking for struct pci_dev.domain... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for off_t... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for pid_t... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking whether gcc needs -traditional... no
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for working memcmp... yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking types of arguments for select... int,fd_set *,struct timeval *
+checking whether lstat correctly handles trailing slash... yes
+checking whether stat accepts an empty string... no
+checking for vprintf... yes
+checking for _doprnt... no
+checking for dup2... yes
+checking for gettimeofday... yes
+checking for memset... yes
+checking for munmap... yes
+checking for select... yes
+checking for socket... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strncasecmp... yes
+checking for strpbrk... yes
+checking for strrchr... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating biosdevname.spec.fedora
+config.status: creating biosdevname.spec.suse
+config.status: creating src/bios_dev_name.h
+config.status: creating config.h
+config.status: executing depfiles commands
+   dh_auto_build
+	make -j1
+make[1]: Entering directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+make  all-recursive
+make[2]: Entering directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+make[3]: Entering directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+gcc -DHAVE_CONFIG_H -I. -I..   -Wall -fno-strict-aliasing -g -O2 -c -o src/bios_dev_name.o src/bios_dev_name.c
+gcc -DHAVE_CONFIG_H -I. -I..   -Wall -fno-strict-aliasing -g -O2 -c -o src/bios_device.o src/bios_device.c
+gcc -DHAVE_CONFIG_H -I. -I..   -Wall -fno-strict-aliasing -g -O2 -c -o src/pirq.o src/pirq.c
+gcc -DHAVE_CONFIG_H -I. -I..   -Wall -fno-strict-aliasing -g -O2 -c -o src/pci.o src/pci.c
+gcc -DHAVE_CONFIG_H -I. -I..   -Wall -fno-strict-aliasing -g -O2 -c -o src/eths.o src/eths.c
+gcc -DHAVE_CONFIG_H -I. -I..   -Wall -fno-strict-aliasing -g -O2 -c -o src/read_proc.o src/read_proc.c
+gcc -DHAVE_CONFIG_H -I. -I..   -Wall -fno-strict-aliasing -g -O2 -c -o src/naming_policy.o src/naming_policy.c
+gcc -DHAVE_CONFIG_H -I. -I..   -Wall -fno-strict-aliasing -g -O2 -c -o src/sysfs.o src/sysfs.c
+gcc -DHAVE_CONFIG_H -I. -I..   -Wall -fno-strict-aliasing -g -O2 -c -o src/dmidecode/dmidecode.o src/dmidecode/dmidecode.c
+gcc -DHAVE_CONFIG_H -I. -I..   -Wall -fno-strict-aliasing -g -O2 -c -o src/dmidecode/dmioem.o src/dmidecode/dmioem.c
+gcc -DHAVE_CONFIG_H -I. -I..   -Wall -fno-strict-aliasing -g -O2 -c -o src/dmidecode/util.o src/dmidecode/util.c
+gcc -Wall -fno-strict-aliasing -g -O2   -o src/biosdevname src/bios_dev_name.o src/bios_device.o src/pirq.o src/pci.o src/eths.o src/read_proc.o src/naming_policy.o src/sysfs.o src/dmidecode/dmidecode.o src/dmidecode/dmioem.o src/dmidecode/util.o -lz -lpci -lc 
+make[3]: Leaving directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+make[2]: Leaving directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+make[1]: Leaving directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+   dh_auto_test
+	make -j1 check VERBOSE=1
+make[1]: Entering directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+make[2]: Entering directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+make[2]: Leaving directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+make[1]: Leaving directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary --with autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_testroot
+   dh_prep
+   dh_installdirs
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+dh_auto_install
+	make -j1 install DESTDIR=/root/devuan-biosdevname/biosdevname-0.7.2/debian/tmp AM_UPDATE_INFO_DIR=no
+make[2]: Entering directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+make[3]: Entering directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+make[4]: Entering directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+ /bin/mkdir -p '/root/devuan-biosdevname/biosdevname-0.7.2/debian/tmp/usr/sbin'
+  /usr/bin/install -c src/biosdevname '/root/devuan-biosdevname/biosdevname-0.7.2/debian/tmp/usr/sbin'
+mkdir -p /root/devuan-biosdevname/biosdevname-0.7.2/debian/tmp/lib/udev/rules.d
+/usr/bin/install -c -m 644 ./biosdevname.rules.in /root/devuan-biosdevname/biosdevname-0.7.2/debian/tmp/lib/udev/rules.d/71-biosdevname.rules
+ /bin/mkdir -p '/root/devuan-biosdevname/biosdevname-0.7.2/debian/tmp/usr/share/man/man1'
+ /usr/bin/install -c -m 644 biosdevname.1 '/root/devuan-biosdevname/biosdevname-0.7.2/debian/tmp/usr/share/man/man1'
+make[4]: Leaving directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+make[3]: Leaving directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+make[2]: Leaving directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+install -D --mode=775 debian/initramfs.hook \
+	debian/biosdevname/usr/share/initramfs-tools/hooks/biosdevname
+make[1]: Leaving directory '/root/devuan-biosdevname/biosdevname-0.7.2'
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/biosdevname/sbin/biosdevname was not linked against libz.so.1 (it uses none of the library's symbols)
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: Depends field of package biosdevname-udeb: unknown substitution variable ${shlibs:Depends}
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'biosdevname-dbgsym' in '../biosdevname-dbgsym_0.7.2-1.1_amd64.deb'.
+dpkg-deb: building package 'biosdevname-udeb' in '../biosdevname-udeb_0.7.2-1.1_amd64.deb'.
+dpkg-deb: building package 'biosdevname' in '../biosdevname_0.7.2-1.1_amd64.deb'.
+ dpkg-genbuildinfo --build=binary
+ dpkg-genchanges --build=binary >../biosdevname_0.7.2-1.1_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source -i --after-build biosdevname-0.7.2
+dpkg-buildpackage: info: binary-only upload (no source included)
+Now running lintian...
+warning: the authors of lintian do not recommend running it with root privileges!
+Could not find a profile matching "{VENDOR}/main" for vendor devuan at /usr/share/lintian/commands/lintian line 1561.
+Finished running lintian.
